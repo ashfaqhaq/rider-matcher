@@ -20,3 +20,9 @@ python rider_matcher.py
 ```
 
 The command prints JSON results. The two source CSVs are in `data/`; no API key or language model is needed.
+
+## OpenRouter configuration
+
+Add your key to the local `.env` file as `OPENROUTER_API_KEY=your-key`. This file is ignored by Git. `config.py` loads it into the environment and reads the key from `OPENROUTER_API_KEY`; an already-set environment variable takes precedence. The OpenRouter model ID is configured in `config.py`.
+
+The current matching graph is deterministic and does not yet call OpenRouter, so it can run without a key.

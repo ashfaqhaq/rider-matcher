@@ -3,7 +3,7 @@ name = "rider-matcher"
 version = "0.1.0"
 description = "A LangGraph starter for matching ride requests with candidate drivers"
 requires-python = ">=3.10"
-dependencies = ["langgraph>=0.2,<2"]
+dependencies = ["langgraph>=0.2,<2", "python-dotenv>=1,<2"]
 
 [project.scripts]
 rider-matcher = "rider_matcher:main"
@@ -13,4 +13,4 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-py-modules = ["rider_matcher"]
+py-modules = ["rider_matcher", "config"]
